@@ -6,5 +6,6 @@ from flask import request
 from typing import List, TypeVar
 import Auth
 
+
 class BasicAuth(Auth):
     pass
