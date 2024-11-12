@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 '''
-class Auth to the API authentication
+Basic authentication module for the API.
 '''
-from flask import request
-from typing import List, TypeVar
-import Auth
+from .auth import Auth
 
 
 class BasicAuth(Auth):
+    """Basic authentication class.
+    """
     pass
