@@ -4,7 +4,7 @@ class Auth to the API authentication
 '''
 from flask import request
 from typing import List, TypeVar
-
+import os
 
 class Auth:
     """Authentication class.
