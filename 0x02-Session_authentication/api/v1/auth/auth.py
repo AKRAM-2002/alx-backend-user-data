@@ -47,3 +47,10 @@ class Auth:
         Currently returns None.
         """
         return None
+
+    def session_cookie(self, request=None):
+        '''Returns a cookie value from a request
+        '''
+        if request is not None:
+            return request.cookies.get(os.getenv('SESSION_NAME'))
+        return None
