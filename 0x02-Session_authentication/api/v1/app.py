@@ -46,7 +46,7 @@ def unauthorized(error) -> str:
     return jsonify({"error": "Forbidden"}), 403
 
 
-@app.before_request('/api/v1/auth_session/login/', strict_slashes=False)
+@app.before_request
 def authenticate_user():
     """Filter requests before routing them.
     """
