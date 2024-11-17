@@ -9,7 +9,7 @@ from typing import Tuple, TypeVar
 from .auth import Auth
 from models.user import User
 import uuid
-
+import os
 
 class SessionAuth(Auth):
     """class BasicAuth
